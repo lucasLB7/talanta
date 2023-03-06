@@ -1,0 +1,29 @@
+{% load static %}
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<head>
+  <title>Talenta HR Solutions - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+{{form.media}}
+{% endblock %}
+
+{% block script %}
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+{% endblock %}
+</head>
+
+<body>
+{% include "header_footer.html" %}{% block content %}
+{% endblock %}
+</body>
