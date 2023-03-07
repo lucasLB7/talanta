@@ -1,4 +1,15 @@
-h1 {
-  color: lightblue;
-  font-family: verdana;
+.hud h1 {
+  background-color: red;
+  color: blue;
+  font-family: cursive;
+}
+
+
+.dropdown-menu-custom ul {
+  float: left;
+}
+
+.dropdown-menu-custom ul:first-of-type{
+  border-right: red;
+  padding-right: 20px;
 }

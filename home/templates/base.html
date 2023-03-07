@@ -24,6 +24,9 @@
 </head>
 
 <body>
-{% include "header_footer.html" %}{% block content %}
-{% endblock %}
+  {% block header %}
+  {% endblock %}
+
+  {% block content %}
+  {% endblock %}
 </body>

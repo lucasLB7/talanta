@@ -1,7 +1,8 @@
-{% block content %}
+{% block header %}
 
-
-
+<div class="hud">
+  <h1>test</h1>
+</div>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
 
@@ -13,21 +14,26 @@
             <a class="nav-link" href="/">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/repos">ALL REPOSITORIES</a>
+            <a class="nav-link" href="/repos">ABOUT US</a>
           </li>
           {% comment %} {% if user.is_authenticated %} {% endcomment %}
           <!-- Dropdown -->
           <li class="nav-item dropdown">
 
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                    QUICK-LINKS
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">OUR SERVICES</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="#recent">RECENT PROJECTS</a>
-              <a class="dropdown-item" href="#services">ABOUT ME</a>
 
+
+                <a class="dropdown-item" href="#recent">HR Consulatancy</a>
+                <a class="dropdown-item" href="#services">HR Audits</a>
+                <a class="dropdown-item" href="#services">Personel Outsourcing</a>
+
+
+                <a class="dropdown-item" href="#services">Talent Aquisition</a>
+                <a class="dropdown-item" href="#services">HR Audits</a>
 
             </div>
+
           {% comment %} </li>
           {% else %}
 
